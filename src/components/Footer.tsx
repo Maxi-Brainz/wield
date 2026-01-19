@@ -1,0 +1,120 @@
+import { Mail, Phone, MapPin } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-navy-deep text-primary-foreground">
+      <div className="container-narrow mx-auto section-padding">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          {/* Brand Column */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-full bg-gold-soft flex items-center justify-center">
+                <span className="text-navy-deep font-heading font-bold text-lg">W</span>
+              </div>
+              <span className="font-heading font-semibold text-lg">WIELD-I</span>
+            </div>
+            <p className="text-primary-foreground/70 leading-relaxed max-w-md mb-6">
+              Women's Inclusion, Empowerment & Leadership Development Initiative. 
+              Building pathways for women's leadership and participation across Nigeria.
+            </p>
+            <div className="space-y-3">
+              <a href="mailto:info@wieldi.org" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
+                <Mail className="w-4 h-4" />
+                <span className="text-sm">info@wieldi.org</span>
+              </a>
+              <a href="tel:+2348012345678" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
+                <Phone className="w-4 h-4" />
+                <span className="text-sm">+234 801 234 5678</span>
+              </a>
+              <div className="flex items-start gap-3 text-primary-foreground/70">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="text-sm">Abuja, Nigeria</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#about" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#focus-areas" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Our Work
+                </a>
+              </li>
+              <li>
+                <a href="#impact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Impact
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  News & Updates
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Resources
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Get Involved */}
+          <div>
+            <h4 className="font-semibold mb-6">Get Involved</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#partner" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Partner With Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Donate
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Volunteer
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-primary-foreground/60 text-sm">
+            © 2025 WIELD-I. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">
+              Privacy Policy
+            </a>
+            <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">
+              Terms of Use
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
