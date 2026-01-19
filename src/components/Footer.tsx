@@ -42,29 +42,24 @@ const Footer = () => {
             <h4 className="font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                <Link to="/#about" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#focus-areas" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                <Link to="/#focus-areas" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
                   Our Work
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#impact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                <Link to="/#impact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
                   Impact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
-                  News & Updates
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
-                  Resources
-                </a>
+                <Link to="/contact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>

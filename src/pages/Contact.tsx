@@ -53,13 +53,13 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-cream">
-        <div className="container-narrow mx-auto px-6">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-cream">
+        <div className="container-narrow mx-auto px-4 md:px-6">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
               Get in Touch
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               We welcome partnerships, collaborations, and inquiries from individuals, 
               organizations, and institutions committed to advancing women's inclusion 
               and leadership in Nigeria.
@@ -69,9 +69,9 @@ const Contact = () => {
       </section>
 
       {/* Main Content */}
-      <section className="section-padding">
-        <div className="container-narrow mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16">
+      <section className="py-12 md:py-20">
+        <div className="container-narrow mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-10 md:gap-16">
             {/* Contact Information */}
             <div>
               <h2 className="font-heading text-2xl font-semibold text-foreground mb-8">
@@ -152,7 +152,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <div className="bg-card border border-border rounded-xl p-8">
+              <div className="bg-card border border-border rounded-xl p-5 md:p-8">
                 <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
                   Send Us a Message
                 </h2>
