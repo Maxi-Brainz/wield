@@ -18,10 +18,10 @@ const QuoteSection = () => {
           {/* Attribution */}
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 rounded-full bg-gold-soft/20 border-2 border-gold-soft flex items-center justify-center mb-4">
-              <span className="font-heading text-2xl text-gold-soft font-semibold">A</span>
+              <span className="font-heading text-2xl text-gold-soft font-semibold">O</span>
             </div>
             <span className="text-primary-foreground font-semibold text-lg">
-              Dr. Amina Okonkwo
+              Okeke Amarachi Evangel
             </span>
             <span className="text-primary-foreground/70 text-sm">
               Founder & Executive Director, WIELD-I
