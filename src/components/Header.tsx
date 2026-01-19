@@ -98,16 +98,25 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-border bg-background">
             <nav className="flex flex-col py-4 px-6 gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                  onClick={() => handleNavClick(link.href)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isPageLink = link.href === "/" || link.href === "/contact";
+                return (
+                  <Link
+                    key={link.label}
+                    to={isPageLink ? link.href : link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      if (!isPageLink && location.pathname === "/") {
+                        const element = document.querySelector(link.href.substring(1));
+                        element?.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
               <Button variant="gold" size="lg" className="mt-2">
                 Donate Now
               </Button>
