@@ -1,4 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+import wieldLogo from "@/assets/wield-logo.jpeg";
 
 const Footer = () => {
   return (
@@ -8,9 +10,11 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-gold-soft flex items-center justify-center">
-                <span className="text-navy-deep font-heading font-bold text-lg">W</span>
-              </div>
+              <img 
+                src={wieldLogo} 
+                alt="WIELD-I Logo" 
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-heading font-semibold text-lg">WIELD-I</span>
             </div>
             <p className="text-primary-foreground/70 leading-relaxed max-w-md mb-6">
@@ -18,17 +22,17 @@ const Footer = () => {
               Building pathways for women's leadership and participation across Nigeria.
             </p>
             <div className="space-y-3">
-              <a href="mailto:info@wieldi.org" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
+              <a href="mailto:wieldinitiative22@gmail.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">info@wieldi.org</span>
+                <span className="text-sm">wieldinitiative22@gmail.com</span>
               </a>
-              <a href="tel:+2348012345678" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
+              <a href="tel:+2348161206990" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">+234 801 234 5678</span>
+                <span className="text-sm">+234 816 120 6990</span>
               </a>
               <div className="flex items-start gap-3 text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="text-sm">Abuja, Nigeria</span>
+                <span className="text-sm">Wuye, Abuja, Nigeria</span>
               </div>
             </div>
           </div>
@@ -90,9 +94,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                <Link to="/contact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
