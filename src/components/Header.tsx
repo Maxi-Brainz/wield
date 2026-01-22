@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Our Work", href: "/#focus-areas" },
   { label: "Impact", href: "/impact" },
+  { label: "Partner", href: "/partner" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -28,7 +29,7 @@ const Header = () => {
   };
 
   const renderNavLink = (link: { label: string; href: string }) => {
-    const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact";
+    const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact" || link.href === "/partner";
     if (isPageLink) {
       return (
         <Link
@@ -100,7 +101,7 @@ const Header = () => {
           <div className="md:hidden border-t border-border bg-background">
             <nav className="flex flex-col py-4 px-6 gap-4">
             {navLinks.map((link) => {
-                const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact";
+                const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact" || link.href === "/partner";
                 return (
                   <Link
                     key={link.label}

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-women.jpg";
 
 const HeroSection = () => {
@@ -40,11 +41,11 @@ const HeroSection = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="xl">
-              Partner With Us
+            <Button variant="hero" size="xl" asChild>
+              <Link to="/partner">Partner With Us</Link>
             </Button>
-            <Button variant="heroOutline" size="xl">
-              Explore Our Work
+            <Button variant="heroOutline" size="xl" asChild>
+              <Link to="/#focus-areas">Explore Our Work</Link>
             </Button>
           </div>
         </div>
