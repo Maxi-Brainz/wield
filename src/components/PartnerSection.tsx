@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PartnerSection = () => {
   return (
@@ -21,12 +22,14 @@ const PartnerSection = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="group">
-              Become a Partner
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <Button variant="hero" size="xl" className="group" asChild>
+              <Link to="/partner">
+                Become a Partner
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
-            <Button variant="heroOutline" size="xl">
-              Contact Our Team
+            <Button variant="heroOutline" size="xl" asChild>
+              <Link to="/contact">Contact Our Team</Link>
             </Button>
           </div>
 
