@@ -45,7 +45,7 @@ const HeroSection = () => {
               <Link to="/partner">Partner With Us</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/#focus-areas">Explore Our Work</Link>
+              <Link to="/programs">Explore Our Work</Link>
             </Button>
           </div>
         </div>
