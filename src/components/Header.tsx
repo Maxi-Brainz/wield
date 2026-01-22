@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/#about" },
   { label: "Our Work", href: "/#focus-areas" },
-  { label: "Impact", href: "/#impact" },
+  { label: "Impact", href: "/impact" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -28,7 +28,8 @@ const Header = () => {
   };
 
   const renderNavLink = (link: { label: string; href: string }) => {
-    if (link.href === "/" || link.href === "/contact") {
+    const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact";
+    if (isPageLink) {
       return (
         <Link
           key={link.label}
@@ -98,12 +99,12 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-border bg-background">
             <nav className="flex flex-col py-4 px-6 gap-4">
-              {navLinks.map((link) => {
-                const isPageLink = link.href === "/" || link.href === "/contact";
+            {navLinks.map((link) => {
+                const isPageLink = link.href === "/" || link.href === "/contact" || link.href === "/impact";
                 return (
                   <Link
                     key={link.label}
-                    to={isPageLink ? link.href : link.href}
+                    to={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
                     onClick={() => {
                       setMobileMenuOpen(false);
