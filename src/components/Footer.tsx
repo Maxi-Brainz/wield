@@ -69,9 +69,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-6">Get Involved</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#partner" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
+                <Link to="/partner" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
                   Partner With Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">
