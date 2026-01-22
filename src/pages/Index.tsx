@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import HomeSummarySection from "@/components/HomeSummarySection";
+import QuoteSection from "@/components/QuoteSection";
 import PartnerSection from "@/components/PartnerSection";
 import Footer from "@/components/Footer";
 
@@ -44,6 +45,7 @@ const Index = () => {
           variant="light"
         />
 
+        <QuoteSection />
         <PartnerSection />
       </main>
       <Footer />
