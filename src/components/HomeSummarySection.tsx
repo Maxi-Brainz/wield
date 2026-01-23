@@ -30,7 +30,7 @@ const HomeSummarySection = ({
         <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-3 block">
           {label}
         </span>
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-4 max-w-2xl mx-auto">
+        <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4 max-w-2xl mx-auto">
           {title}
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-6 max-w-xl mx-auto">
