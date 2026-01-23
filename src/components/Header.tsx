@@ -48,9 +48,11 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="gold" size="lg">
-              Donate Now
-            </Button>
+            <Link to="/donate">
+              <Button variant="gold" size="lg">
+                Donate Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -81,9 +83,11 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button variant="gold" size="lg" className="mt-2">
-                Donate Now
-              </Button>
+              <Link to="/donate" onClick={() => setMobileMenuOpen(false)}>
+                <Button variant="gold" size="lg" className="mt-2 w-full">
+                  Donate Now
+                </Button>
+              </Link>
             </nav>
           </div>
         )}
