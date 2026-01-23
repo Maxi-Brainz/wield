@@ -13,7 +13,7 @@ const whySupportMatters = [
   {
     icon: Building2,
     title: "Policy Advocacy",
-    description: "We work with government institutions to advance gender-responsive policies that create lasting systemic change."
+    description: "We work with government institutions to advance gender-responsive policies that create lasting structural transformation."
   },
   {
     icon: Heart,
@@ -73,7 +73,7 @@ const Donate = () => {
             Donate Now – Support Women's Inclusion & Leadership in Nigeria
           </h1>
           <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Your generosity fuels meaningful change. Together, we can advance women's political participation, 
+            Your generosity fuels meaningful change—advancing women's political participation, 
             economic empowerment, and leadership development across Nigeria.
           </p>
         </div>
@@ -84,7 +84,7 @@ const Donate = () => {
         <div className="container-narrow mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-8">
-              Empowering Change Through Partnership
+              Empowering Change Through Collaboration
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               At WIELD-I, we believe that sustainable change is built through collaborative partnerships. 
@@ -108,7 +108,7 @@ const Donate = () => {
               Why Your Support Matters
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every contribution strengthens our ability to drive systemic change for women across Nigeria.
+              Every contribution strengthens our ability to advance equity and opportunity for women across Nigeria.
             </p>
           </div>
           
@@ -194,19 +194,19 @@ const Donate = () => {
               ensure all transactions are processed through verified, accountable channels.
             </p>
             <p className="text-lg text-primary-foreground/70 mb-10">
-              In the meantime, we welcome partnership discussions and in-kind contributions. 
-              Please reach out to explore how we can work together.
+              In the meantime, we welcome collaboration discussions and in-kind contributions. 
+              Please reach out to explore how you can support our mission.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <Button variant="gold" size="xl" className="w-full sm:w-auto">
-                  Contact Us
+                  Discuss Support Options
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
               <Link to="/partner">
                 <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                  Explore Partnership
+                  Partner With WIELD-I
                 </Button>
               </Link>
             </div>
