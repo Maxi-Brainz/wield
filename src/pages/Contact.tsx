@@ -8,8 +8,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
 
-// Formspree endpoint - Update this when switching to info@wieldi.org
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/dev.wield@gmail.com";
+// Formspree endpoint - Update to info@wieldi.org form when Zoho Mail is activated
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgwlrqv";
 
 const Contact = () => {
   const { toast } = useToast();
