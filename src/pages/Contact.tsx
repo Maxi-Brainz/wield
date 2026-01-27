@@ -8,6 +8,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
 
+// Formspree endpoint - Update this when switching to info@wieldi.org
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/dev.wield@gmail.com";
+
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,22 +33,48 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.fullName,
+          email: formData.email,
+          organization: formData.organization || "Not provided",
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `Contact Form: ${formData.subject}`,
+        }),
+      });
 
-    toast({
-      title: "Message Sent",
-      description: "Thank you for reaching out. We'll get back to you soon.",
-    });
+      if (response.ok) {
+        toast({
+          title: "Message Sent",
+          description: "Thank you for reaching out. We'll get back to you soon.",
+        });
 
-    setFormData({
-      fullName: "",
-      email: "",
-      organization: "",
-      subject: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+        setFormData({
+          fullName: "",
+          email: "",
+          organization: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -158,6 +187,15 @@ const Contact = () => {
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot field for spam protection - hidden from users */}
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    style={{ display: "none" }}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                  
                   <div className="space-y-2">
                     <Label htmlFor="fullName">Full Name</Label>
                     <Input
