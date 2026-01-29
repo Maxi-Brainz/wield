@@ -82,13 +82,16 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-cream">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-primary text-primary-foreground">
         <div className="container-narrow mx-auto px-4 md:px-6">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
+            <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
+              Contact Us
+            </span>
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
               Get in Touch
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-primary-foreground/80 leading-relaxed">
               We welcome partnerships, collaborations, and inquiries from individuals, 
               organizations, and institutions committed to advancing women's inclusion 
               and leadership in Nigeria.
@@ -103,9 +106,11 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-10 md:gap-16">
             {/* Contact Information */}
             <div>
-              <h2 className="font-heading text-2xl font-semibold text-foreground mb-8">
-                Contact Information
-              </h2>
+              <div className="bg-primary text-primary-foreground rounded-lg px-6 py-4 mb-8">
+                <h2 className="font-heading text-2xl font-semibold">
+                  Contact Information
+                </h2>
+              </div>
 
               <div className="space-y-8">
                 {/* Office Address */}
@@ -182,9 +187,11 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <div className="bg-card border border-border rounded-xl p-5 md:p-8">
-                <h2 className="font-heading text-2xl font-semibold text-foreground mb-6">
-                  Send Us a Message
-                </h2>
+                <div className="bg-primary text-primary-foreground rounded-lg px-6 py-4 mb-6">
+                  <h2 className="font-heading text-2xl font-semibold">
+                    Send Us a Message
+                  </h2>
+                </div>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Honeypot field for spam protection - hidden from users */}

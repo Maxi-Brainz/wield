@@ -1,13 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import founderImage from "@/assets/founder-amarachi.jpg";
 
 const teamMembers = [
   {
-    name: "Okeke Amarachi Evangel",
-    role: "Founder & Executive Director",
-    initial: "O",
-    bio: "A passionate advocate for women's rights and leadership development, Amarachi founded WIELD-I to address systemic barriers limiting women's participation in Nigeria's social, economic, and political spheres.",
+    name: "Joseph Ogakwu",
+    role: "Digital & Technology Lead",
+    initial: "J",
+    bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
   {
     name: "Program Director",
@@ -69,9 +71,10 @@ const Team = () => {
             {/* Founder Feature */}
             <div className="max-w-3xl mx-auto mb-16">
               <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center">
-                <div className="w-24 h-24 rounded-full bg-primary border-4 border-gold-soft flex items-center justify-center mx-auto mb-6">
-                  <span className="font-heading text-4xl text-primary-foreground font-semibold">O</span>
-                </div>
+                <Avatar className="w-24 h-24 mx-auto mb-6 border-4 border-gold-soft">
+                  <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel" className="object-cover" />
+                  <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl font-semibold">O</AvatarFallback>
+                </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
                   Okeke Amarachi Evangel
                 </h3>
