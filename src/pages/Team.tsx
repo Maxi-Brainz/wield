@@ -91,8 +91,8 @@ const Team = () => {
             </div>
 
             {/* Team Grid */}
-            <div className="grid md:grid-cols-3 gap-8">
-              {teamMembers.slice(1).map((member, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   className="bg-background rounded-xl p-8 border border-border text-center"
