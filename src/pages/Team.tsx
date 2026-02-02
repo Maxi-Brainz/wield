@@ -3,12 +3,14 @@ import Footer from "@/components/Footer";
 import { Users } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import founderImage from "@/assets/founder-amarachi.jpg";
+import josephImage from "@/assets/joseph-ogakwu.jpeg";
 
 const teamMembers = [
   {
     name: "Joseph Ogakwu",
     role: "Digital & Technology Lead",
     initial: "J",
+    image: josephImage,
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
   {
@@ -70,10 +72,10 @@ const Team = () => {
 
             {/* Founder Feature */}
             <div className="max-w-3xl mx-auto mb-16">
-              <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center">
-                <Avatar className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 border-4 border-gold-soft">
+              <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <Avatar className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 hover:scale-105">
                   <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel" className="object-cover" />
-                  <AvatarFallback className="bg-primary text-primary-foreground font-heading text-6xl font-semibold">O</AvatarFallback>
+                  <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl sm:text-5xl md:text-6xl font-semibold">O</AvatarFallback>
                 </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
                   Okeke Amarachi Evangel
@@ -91,18 +93,27 @@ const Team = () => {
             </div>
 
             {/* Team Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className="bg-background rounded-xl p-8 border border-border text-center"
+                  className="bg-background rounded-xl p-6 md:p-8 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-gold-soft/50 group"
                 >
-                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
-                    <span className="font-heading text-4xl md:text-5xl text-primary-foreground font-semibold">
-                      {member.initial}
-                    </span>
-                  </div>
-                  <h3 className="font-heading text-xl text-foreground mb-2">
+                  {member.image ? (
+                    <Avatar className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 group-hover:scale-105">
+                      <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                      <AvatarFallback className="bg-primary text-primary-foreground font-heading text-3xl sm:text-4xl md:text-5xl font-semibold">
+                        {member.initial}
+                      </AvatarFallback>
+                    </Avatar>
+                  ) : (
+                    <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-105">
+                      <span className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary-foreground font-semibold">
+                        {member.initial}
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="font-heading text-lg md:text-xl text-foreground mb-2">
                     {member.name}
                   </h3>
                   <span className="text-gold-soft font-semibold text-xs uppercase tracking-wider block mb-4">
