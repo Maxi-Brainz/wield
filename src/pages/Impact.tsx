@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 import { Scale, Users, Megaphone, BookOpen, Handshake, BarChart3 } from "lucide-react";
 
 const impactAreas = [
@@ -45,140 +46,142 @@ const partnerCategories = [
 
 const Impact = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        {/* Hero Section */}
-        <section className="section-padding bg-primary text-primary-foreground">
-          <div className="container-narrow mx-auto text-center">
-            <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
-              Our Impact
-            </span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Driving Systemic Change Through Advocacy & Action
-            </h1>
-            <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              WIELD-I advances women's inclusion through sustained advocacy, leadership 
-              development, and community-based engagement. Our impact reflects both 
-              institutional influence and grassroots change across Nigeria.
-            </p>
-          </div>
-        </section>
-
-        {/* Key Impact Areas */}
-        <section className="section-padding bg-background">
-          <div className="container-narrow mx-auto">
-            <div className="text-center mb-16">
+    <PageTransition>
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          {/* Hero Section */}
+          <section className="section-padding bg-primary text-primary-foreground">
+            <div className="container-narrow mx-auto text-center">
               <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
-                What We Achieve
+                Our Impact
               </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-foreground">
-                Key Impact Areas
-              </h2>
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+                Driving Systemic Change Through Advocacy & Action
+              </h1>
+              <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+                WIELD-I advances women's inclusion through sustained advocacy, leadership 
+                development, and community-based engagement. Our impact reflects both 
+                institutional influence and grassroots change across Nigeria.
+              </p>
             </div>
+          </section>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              {impactAreas.map((area, index) => (
-                <div
-                  key={index}
-                  className="bg-cream rounded-xl p-8 border border-border"
-                >
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                    <area.icon className="w-6 h-6 text-primary-foreground" />
+          {/* Key Impact Areas */}
+          <section className="section-padding bg-background">
+            <div className="container-narrow mx-auto">
+              <div className="text-center mb-16">
+                <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
+                  What We Achieve
+                </span>
+                <h2 className="font-heading text-3xl md:text-4xl text-foreground">
+                  Key Impact Areas
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {impactAreas.map((area, index) => (
+                  <div
+                    key={index}
+                    className="bg-cream rounded-xl p-8 border border-border"
+                  >
+                    <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                      <area.icon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="font-heading text-xl text-foreground mb-4">
+                      {area.title}
+                    </h3>
+                    <ul className="space-y-3">
+                      {area.points.map((point, pointIndex) => (
+                        <li
+                          key={pointIndex}
+                          className="text-muted-foreground leading-relaxed flex items-start gap-3"
+                        >
+                          <span className="w-1.5 h-1.5 bg-gold-soft rounded-full mt-2 flex-shrink-0" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 className="font-heading text-xl text-foreground mb-4">
-                    {area.title}
-                  </h3>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Strategic Partnerships */}
+          <section className="section-padding bg-cream">
+            <div className="container-narrow mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
+                    <Handshake className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
+                    Strategic Partnerships
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-8">
+                    WIELD-I's impact is amplified through meaningful collaborations with 
+                    organizations that share our commitment to gender equality and women's 
+                    empowerment in Nigeria.
+                  </p>
+                  <p className="text-foreground font-medium mb-6">
+                    WIELD-I has collaborated with:
+                  </p>
                   <ul className="space-y-3">
-                    {area.points.map((point, pointIndex) => (
+                    {partnerCategories.map((category, index) => (
                       <li
-                        key={pointIndex}
-                        className="text-muted-foreground leading-relaxed flex items-start gap-3"
+                        key={index}
+                        className="flex items-center gap-3 text-muted-foreground"
                       >
-                        <span className="w-1.5 h-1.5 bg-gold-soft rounded-full mt-2 flex-shrink-0" />
-                        {point}
+                        <span className="w-2 h-2 bg-gold-soft rounded-full" />
+                        {category}
                       </li>
                     ))}
                   </ul>
+                  <p className="text-sm text-muted-foreground mt-6 italic">
+                    Specific partner names will be listed once formal approvals or MOUs are confirmed.
+                  </p>
                 </div>
-              ))}
+                <div className="bg-background rounded-2xl p-10 border border-border">
+                  <p className="font-heading text-2xl text-foreground leading-relaxed">
+                    "Our partnerships are built on mutual respect, shared values, and a 
+                    collective commitment to advancing women's leadership across Nigeria."
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Strategic Partnerships */}
-        <section className="section-padding bg-cream">
-          <div className="container-narrow mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                  <Handshake className="w-7 h-7 text-primary-foreground" />
+          {/* Impact Measurement */}
+          <section className="section-padding bg-background">
+            <div className="container-narrow mx-auto">
+              <div className="bg-primary rounded-2xl p-10 md:p-16 text-center">
+                <div className="w-14 h-14 bg-gold-soft/20 rounded-xl flex items-center justify-center mx-auto mb-6">
+                  <BarChart3 className="w-7 h-7 text-gold-soft" />
                 </div>
-                <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-                  Strategic Partnerships
+                <h2 className="font-heading text-3xl md:text-4xl text-primary-foreground mb-6">
+                  Impact Measurement
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  WIELD-I's impact is amplified through meaningful collaborations with 
-                  organizations that share our commitment to gender equality and women's 
-                  empowerment in Nigeria.
+                <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                  WIELD-I is strengthening its monitoring, evaluation, and learning framework 
+                  to publish verified impact metrics and annual reports.
                 </p>
-                <p className="text-foreground font-medium mb-6">
-                  WIELD-I has collaborated with:
-                </p>
-                <ul className="space-y-3">
-                  {partnerCategories.map((category, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center gap-3 text-muted-foreground"
-                    >
-                      <span className="w-2 h-2 bg-gold-soft rounded-full" />
-                      {category}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-sm text-muted-foreground mt-6 italic">
-                  Specific partner names will be listed once formal approvals or MOUs are confirmed.
-                </p>
-              </div>
-              <div className="bg-background rounded-2xl p-10 border border-border">
-                <p className="font-heading text-2xl text-foreground leading-relaxed">
-                  "Our partnerships are built on mutual respect, shared values, and a 
-                  collective commitment to advancing women's leadership across Nigeria."
-                </p>
+                <div className="bg-primary-foreground/10 rounded-xl p-6 max-w-md mx-auto">
+                  <p className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4">
+                    Coming Soon
+                  </p>
+                  <ul className="space-y-2 text-primary-foreground/90">
+                    <li>Verified statistics</li>
+                    <li>Annual impact reports (PDF)</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Impact Measurement */}
-        <section className="section-padding bg-background">
-          <div className="container-narrow mx-auto">
-            <div className="bg-primary rounded-2xl p-10 md:p-16 text-center">
-              <div className="w-14 h-14 bg-gold-soft/20 rounded-xl flex items-center justify-center mx-auto mb-6">
-                <BarChart3 className="w-7 h-7 text-gold-soft" />
-              </div>
-              <h2 className="font-heading text-3xl md:text-4xl text-primary-foreground mb-6">
-                Impact Measurement
-              </h2>
-              <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                WIELD-I is strengthening its monitoring, evaluation, and learning framework 
-                to publish verified impact metrics and annual reports.
-              </p>
-              <div className="bg-primary-foreground/10 rounded-xl p-6 max-w-md mx-auto">
-                <p className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4">
-                  Coming Soon
-                </p>
-                <ul className="space-y-2 text-primary-foreground/90">
-                  <li>Verified statistics</li>
-                  <li>Annual impact reports (PDF)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+          </section>
+        </main>
+        <Footer />
+      </div>
+    </PageTransition>
   );
 };
 
