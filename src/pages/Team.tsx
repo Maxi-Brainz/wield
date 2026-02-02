@@ -71,9 +71,9 @@ const Team = () => {
             {/* Founder Feature */}
             <div className="max-w-3xl mx-auto mb-16">
               <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center">
-                <Avatar className="w-24 h-24 mx-auto mb-6 border-4 border-gold-soft">
+                <Avatar className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 border-4 border-gold-soft">
                   <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel" className="object-cover" />
-                  <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl font-semibold">O</AvatarFallback>
+                  <AvatarFallback className="bg-primary text-primary-foreground font-heading text-6xl font-semibold">O</AvatarFallback>
                 </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
                   Okeke Amarachi Evangel
@@ -97,8 +97,8 @@ const Team = () => {
                   key={index}
                   className="bg-background rounded-xl p-8 border border-border text-center"
                 >
-                  <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
-                    <span className="font-heading text-2xl text-primary-foreground font-semibold">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
+                    <span className="font-heading text-4xl md:text-5xl text-primary-foreground font-semibold">
                       {member.initial}
                     </span>
                   </div>
