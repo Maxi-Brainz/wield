@@ -33,21 +33,6 @@ const PartnerSection = () => {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-12 pt-10 border-t border-primary-foreground/20">
-            <p className="text-primary-foreground/60 text-sm mb-6">
-              Trusted by leading development organizations
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 opacity-70">
-              <span className="text-primary-foreground font-semibold">UN Women</span>
-              <span className="text-primary-foreground/40">•</span>
-              <span className="text-primary-foreground font-semibold">USAID</span>
-              <span className="text-primary-foreground/40">•</span>
-              <span className="text-primary-foreground font-semibold">Ford Foundation</span>
-              <span className="text-primary-foreground/40">•</span>
-              <span className="text-primary-foreground font-semibold">EU Delegation</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
