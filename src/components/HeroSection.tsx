@@ -39,7 +39,7 @@ const HeroSection = () => {
       <div className="relative z-10 container-narrow mx-auto px-6 py-32">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-soft/20 border border-gold-soft/30 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-soft/20 border border-gold-soft/30 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <span className="w-2 h-2 rounded-full bg-gold-soft" />
             <span className="text-gold-soft text-sm font-medium">
               Women-led · Nigeria
@@ -47,20 +47,20 @@ const HeroSection = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-6">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             Empowering Women to Participate, 
             <span className="text-gold-soft"> Lead</span>, and Thrive
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-10 max-w-2xl">
+          <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-10 max-w-2xl opacity-0 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
             Women's Inclusion, Empowerment & Leadership Development Initiative builds 
             pathways for women's political participation, economic independence, and 
             leadership across Nigeria.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
             <Button variant="hero" size="xl" asChild>
               <Link to="/partner">Partner With Us</Link>
             </Button>
