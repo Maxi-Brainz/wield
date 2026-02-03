@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { 
   Handshake, 
@@ -108,6 +109,11 @@ const supportOptions = [
 const Partner = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Partner With WIELD-I | NGO Collaboration in Nigeria"
+        description="Join WIELD-I as a development partner, donor, or collaborator advancing women's leadership and empowerment across Nigeria."
+        path="/partner"
+      />
       <Header />
       <main>
         {/* Hero Section */}

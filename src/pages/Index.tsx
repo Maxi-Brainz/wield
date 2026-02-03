@@ -4,10 +4,16 @@ import HomeSummarySection from "@/components/HomeSummarySection";
 import QuoteSection from "@/components/QuoteSection";
 import PartnerSection from "@/components/PartnerSection";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Women's Inclusion & Leadership Development in Nigeria | WIELD-I"
+        description="WIELD-I advances women's political participation, leadership development, and economic empowerment across Nigeria."
+        path="/"
+      />
       <Header />
       <main>
         <HeroSection />

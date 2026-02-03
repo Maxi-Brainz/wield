@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 
 const whySupportMatters = [
   {
@@ -61,6 +62,11 @@ const supportOptions = [
 const Donate = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Support Women's Empowerment in Nigeria | Donate to WIELD-I"
+        description="Support WIELD-I's mission to advance women's inclusion, leadership, and empowerment across Nigeria through your generous contribution."
+        path="/donate"
+      />
       <Header />
       
       {/* Hero Section */}

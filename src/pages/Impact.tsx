@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 import { Scale, Users, Megaphone, BookOpen, Handshake, BarChart3 } from "lucide-react";
 
 const impactAreas = [
@@ -46,6 +47,11 @@ const partnerCategories = [
 const Impact = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Women's Advocacy Impact & Policy Influence | WIELD-I Nigeria"
+        description="See WIELD-I's impact in women's advocacy, policy reform, grassroots mobilization, and leadership outcomes across Nigeria."
+        path="/impact"
+      />
       <Header />
       <main>
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Vote, Briefcase, Users, GraduationCap, Megaphone, Network, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -64,6 +65,11 @@ const crossCuttingPrograms = [
 const Programs = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Women Leadership Programs & Advocacy | WIELD-I Nigeria"
+        description="Explore WIELD-I's programs in political participation, economic empowerment, and leadership capacity building for Nigerian women."
+        path="/programs"
+      />
       <Header />
       <main>
         {/* Hero Section */}

@@ -5,14 +5,27 @@ import heroImage1 from "@/assets/hero-women.jpg";
 import heroImage2 from "@/assets/hero-civic-engagement.jpg";
 import heroImage3 from "@/assets/hero-leadership.jpg";
 
-const heroImages = [heroImage1, heroImage2, heroImage3];
+const heroSlides = [
+  { 
+    image: heroImage1, 
+    alt: "Nigerian women leaders discussing community empowerment strategies" 
+  },
+  { 
+    image: heroImage2, 
+    alt: "Women civic engagement and voter education workshop in Nigeria" 
+  },
+  { 
+    image: heroImage3, 
+    alt: "Women leadership training and capacity building session in Abuja" 
+  },
+];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+      setCurrentImageIndex((prev) => (prev + 1) % heroSlides.length);
     }, 6000); // Change image every 6 seconds
 
     return () => clearInterval(interval);
@@ -22,14 +35,15 @@ const HeroSection = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Images with Fade Transition */}
       <div className="absolute inset-0">
-        {heroImages.map((image, index) => (
+        {heroSlides.map((slide, index) => (
           <img
             key={index}
-            src={image}
-            alt={`Empowered women leaders in Nigeria - ${index + 1}`}
+            src={slide.image}
+            alt={slide.alt}
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[2000ms] ease-in-out ${
               index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}
+            loading={index === 0 ? "eager" : "lazy"}
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/90 via-navy-deep/75 to-navy-deep/60" />
