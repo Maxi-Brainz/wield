@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 import { useToast } from "@/hooks/use-toast";
 
 // Formspree endpoint - Update to info@wieldi.org form when Zoho Mail is activated
@@ -79,6 +80,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Contact WIELD-I | Women's NGO in Abuja, Nigeria"
+        description="Get in touch with WIELD-I for partnerships, collaborations, and inquiries on women's empowerment and leadership in Nigeria."
+        path="/contact"
+      />
       <Header />
 
       {/* Hero Section */}

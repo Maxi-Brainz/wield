@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageSEO from "@/components/PageSEO";
 import { Users } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import founderImage from "@/assets/founder-amarachi.jpg";
@@ -36,6 +37,11 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageSEO
+        title="Meet Our Team | WIELD-I Leadership & Staff"
+        description="Meet the dedicated team driving women's empowerment and leadership development at WIELD-I Nigeria."
+        path="/team"
+      />
       <Header />
       <main>
         {/* Hero Section */}
@@ -74,7 +80,11 @@ const Team = () => {
             <div className="max-w-3xl mx-auto mb-16">
               <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <Avatar className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 hover:scale-105">
-                  <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel" className="object-cover" />
+                  <AvatarImage 
+                    src={founderImage} 
+                    alt="Okeke Amarachi Evangel - Founder and Executive Director of WIELD-I Nigeria" 
+                    className="object-cover" 
+                  />
                   <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl sm:text-5xl md:text-6xl font-semibold">O</AvatarFallback>
                 </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
@@ -101,7 +111,11 @@ const Team = () => {
                 >
                   {member.image ? (
                     <Avatar className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 group-hover:scale-105">
-                      <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                      <AvatarImage 
+                        src={member.image} 
+                        alt={`${member.name} - ${member.role} at WIELD-I Nigeria`} 
+                        className="object-cover" 
+                      />
                       <AvatarFallback className="bg-primary text-primary-foreground font-heading text-3xl sm:text-4xl md:text-5xl font-semibold">
                         {member.initial}
                       </AvatarFallback>
