@@ -1,9 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import PageTransition from "@/components/PageTransition";
 import { Users } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Link } from "react-router-dom";
 import founderImage from "@/assets/founder-amarachi.jpg";
 import josephImage from "@/assets/joseph-ogakwu.jpeg";
 
@@ -37,9 +35,8 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <PageTransition>
-      <div className="min-h-screen bg-background">
-        <Header />
+    <div className="min-h-screen bg-background">
+      <Header />
       <main>
         {/* Hero Section */}
         <section className="section-padding bg-primary text-primary-foreground">
@@ -145,18 +142,17 @@ const Team = () => {
               women's empowerment and leadership development. If you're interested in 
               contributing to our mission, we'd love to hear from you.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
             >
               Get In Touch
-            </Link>
+            </a>
           </div>
         </section>
-        </main>
-        <Footer />
-      </div>
-    </PageTransition>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
