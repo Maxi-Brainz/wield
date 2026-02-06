@@ -5,6 +5,7 @@ import { Users } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import founderImage from "@/assets/founder-amarachi.jpg";
 import josephImage from "@/assets/joseph-ogakwu.jpeg";
+import kemiImage from "@/assets/kemi-ogunleye.jpeg";
 
 const teamMembers = [
   {
@@ -15,15 +16,16 @@ const teamMembers = [
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
   {
-    name: "Program Director",
+    name: "Franca Mmesoma",
     role: "Programs & Strategy",
-    initial: "P",
+    initial: "F",
     bio: "Oversees the design and implementation of WIELD-I's core programs across political participation, economic empowerment, and leadership development.",
   },
   {
-    name: "Advocacy Lead",
+    name: "Kemi Sandra Ogunleye",
     role: "Policy & Advocacy",
-    initial: "A",
+    initial: "K",
+    image: kemiImage,
     bio: "Leads WIELD-I's policy advocacy efforts, engaging with government institutions and legislators to advance gender-responsive legislation and governance reforms.",
   },
   {
