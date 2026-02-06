@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Users, Scale, Handshake, HeartHandshake, Target, Eye, Heart } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import founderImage from "@/assets/founder-amarachi.jpg";
 
 const pillars = [
   {
@@ -185,9 +187,10 @@ const About = () => {
                 ensure no woman is left behind in Nigeria's journey toward equity."
               </blockquote>
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-full bg-gold-soft/20 border-2 border-gold-soft flex items-center justify-center mb-4">
-                  <span className="font-heading text-2xl text-gold-soft font-semibold">O</span>
-                </div>
+                <Avatar className="w-16 h-16 border-2 border-gold-soft mb-4">
+                  <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel - Founder of WIELD-I" className="object-cover" />
+                  <AvatarFallback className="bg-gold-soft/20 font-heading text-2xl text-gold-soft font-semibold">O</AvatarFallback>
+                </Avatar>
                 <span className="text-primary-foreground font-semibold text-lg">
                   Okeke Amarachi Evangel
                 </span>
