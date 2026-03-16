@@ -55,7 +55,7 @@ const Team = () => {
               Our Team
             </span>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Meet the People Behind WIELD-I
+              Meet the Team Behind WIELD-I
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               Our dedicated team of professionals works tirelessly to advance women's 
