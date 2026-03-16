@@ -68,16 +68,9 @@ const Team = () => {
         <section className="section-padding bg-background">
           <div className="container-narrow mx-auto">
             <div className="text-center mb-16">
-              <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
-                Leadership
-              </span>
               <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-                Our Leadership Team
+                Meet the Team Behind WIELD-I
               </h2>
-              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                WIELD-I is led by a team of committed professionals with deep expertise 
-                in advocacy, policy, and community development.
-              </p>
             </div>
 
             {/* Founder Feature */}
