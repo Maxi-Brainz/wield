@@ -67,11 +67,6 @@ const Team = () => {
         {/* Leadership Section */}
         <section className="section-padding bg-background">
           <div className="container-narrow mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-                Meet the Team Behind WIELD-I
-              </h2>
-            </div>
 
             {/* Founder Feature */}
             <div className="max-w-3xl mx-auto mb-16">
