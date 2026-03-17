@@ -85,14 +85,19 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <ScrollReveal direction="up">
-          <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">
-              © 2025 WIELD-I. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6">
-              <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">Privacy Policy</a>
-              <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">Terms of Use</a>
+        <div className="pt-8 border-t border-primary-foreground/20 flex flex-col items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+              <p className="text-primary-foreground/60 text-sm">
+                © 2026 WIELD-I. All rights reserved.
+              </p>
+              <div className="flex items-center gap-6">
+                <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">Privacy Policy</a>
+                <a href="#" className="text-primary-foreground/60 hover:text-gold-soft transition-colors text-sm">Terms of Use</a>
+              </div>
             </div>
+            <p className="text-primary-foreground/60 text-sm">
+              Made with ❤️ by <a href="https://inspireddevs.vercel.app" target="_blank" rel="noopener noreferrer" className="text-gold-soft hover:underline transition-colors">Inspired Devs</a>
+            </p>
           </div>
         </ScrollReveal>
       </div>
