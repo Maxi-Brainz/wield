@@ -7,13 +7,7 @@ interface PageSEOProps {
   image?: string;
 }
 
-// Use relative URL that works on any domain
-const getBaseUrl = () => {
-  if (typeof window !== "undefined") {
-    return window.location.origin;
-  }
-  return "";
-};
+const BASE_URL = "https://wieldinitiative.org";
 
 const PageSEO = ({
   title,
