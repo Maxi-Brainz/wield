@@ -10,9 +10,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <PageSEO
-        title="Women's Inclusion & Leadership Development in Nigeria | WIELD-I"
-        description="WIELD-I advances women's political participation, leadership development, and economic empowerment across Nigeria."
+        title="WIELD Initiative – Empowering Women to Participate, Lead, Transform and Thrive"
+        description="Advancing women's political participation, leadership development and economic empowerment across Nigeria."
         path="/"
+        image="https://wieldinitiative.org/og-image.jpg"
       />
       <Header />
       <main>
