@@ -15,9 +15,8 @@ const PageSEO = ({
   path = "",
   image = "/og-image.jpg",
 }: PageSEOProps) => {
-  const baseUrl = getBaseUrl();
-  const fullUrl = `${baseUrl}${path}`;
-  const imageUrl = image.startsWith("http") ? image : `${baseUrl}${image}`;
+  const fullUrl = `${BASE_URL}${path}`;
+  const imageUrl = image.startsWith("http") ? image : `${BASE_URL}${image}`;
 
   return (
     <Helmet>
