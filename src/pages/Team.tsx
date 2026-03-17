@@ -30,12 +30,6 @@ const teamMembers = [
     image: josephImage,
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
-  {
-    name: "Communications Manager",
-    role: "Communications & Outreach",
-    initial: "C",
-    bio: "Manages WIELD-I's communications strategy, ensuring the organization's mission and impact reach key stakeholders, partners, and the public.",
-  },
 ];
 
 const Team = () => {
