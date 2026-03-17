@@ -30,12 +30,6 @@ const teamMembers = [
     image: josephImage,
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
-  {
-    name: "Communications Manager",
-    role: "Communications & Outreach",
-    initial: "C",
-    bio: "Manages WIELD-I's communications strategy, ensuring the organization's mission and impact reach key stakeholders, partners, and the public.",
-  },
 ];
 
 const Team = () => {
@@ -95,7 +89,7 @@ const Team = () => {
             </div>
 
             {/* Team Grid */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
