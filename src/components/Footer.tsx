@@ -75,9 +75,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-6">Get Involved</h4>
             <ul className="space-y-3">
               <li><Link to="/partner" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Partner With Us</Link></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Donate</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Volunteer</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Careers</a></li>
+              <li><Link to="/donate" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Donate</Link></li>
+              <li><Link to="/contact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Volunteer</Link></li>
               <li><Link to="/contact" className="text-primary-foreground/70 hover:text-gold-soft transition-colors text-sm">Contact</Link></li>
             </ul>
           </StaggerItem>
