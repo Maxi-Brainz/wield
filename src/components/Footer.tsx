@@ -23,9 +23,9 @@ const Footer = () => {
               Building pathways for women's leadership and participation across Nigeria.
             </p>
             <div className="space-y-3">
-              <a href="mailto:wieldinitiative22@gmail.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
+              <a href="mailto:info@wieldinitiative.org" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">wieldinitiative22@gmail.com</span>
+                <span className="text-sm">info@wieldinitiative.org</span>
               </a>
               <a href="tel:+2348161206990" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold-soft transition-colors">
                 <Phone className="w-4 h-4" />
