@@ -4,6 +4,16 @@ import PageSEO from "@/components/PageSEO";
 import { Button } from "@/components/ui/button";
 import { Vote, Briefcase, Users, GraduationCap, Megaphone, Network, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import programPoliticalImg from "@/assets/program-political.jpg";
+import programEconomicImg from "@/assets/program-economic.jpg";
+import programLeadershipImg from "@/assets/program-leadership.jpg";
+
+const programImages = [programPoliticalImg, programEconomicImg, programLeadershipImg];
+const programImageAlts = [
+  "Women at a voter education and civic engagement event in Nigeria",
+  "Women in a business skills and entrepreneurship training workshop",
+  "Woman speaking at a leadership conference podium",
+];
 
 const programAreas = [
   {
