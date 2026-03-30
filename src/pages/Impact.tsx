@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Scale, Users, Megaphone, BookOpen, Handshake, BarChart3 } from "lucide-react";
+import impactHeroImg from "@/assets/impact-hero.jpg";
+import impactPartnershipsImg from "@/assets/impact-partnerships.jpg";
 
 const impactAreas = [
   {
