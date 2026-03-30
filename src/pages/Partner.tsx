@@ -19,6 +19,7 @@ import {
   FileText
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import partnerHeroImg from "@/assets/partner-hero.jpg";
 
 const whyPartnerReasons = [
   {
