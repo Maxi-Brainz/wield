@@ -157,17 +157,29 @@ const About = () => {
         {/* Our Approach */}
         <section className="section-padding bg-background">
           <div className="container-narrow mx-auto">
-            <div className="text-center mb-16">
-              <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
-                How We Work
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-                Our Approach
-              </h2>
-              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                WIELD-I employs an integrated, evidence-informed approach that addresses 
-                systemic barriers through four interconnected pillars of work.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+              <div className="rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
+                <img
+                  src={aboutApproachImg}
+                  alt="Women collaborating on planning documents in Nigeria"
+                  className="w-full h-72 md:h-96 object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={864}
+                />
+              </div>
+              <div className="order-1 lg:order-2">
+                <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
+                  How We Work
+                </span>
+                <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
+                  Our Approach
+                </h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  WIELD-I employs an integrated, evidence-informed approach that addresses 
+                  systemic barriers through four interconnected pillars of work.
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">

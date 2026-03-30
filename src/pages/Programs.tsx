@@ -118,35 +118,47 @@ const Programs = () => {
               {programAreas.map((program, index) => (
                 <div
                   key={index}
-                  className="bg-cream rounded-2xl p-8 md:p-10 border border-border"
+                  className="bg-cream rounded-2xl overflow-hidden border border-border"
                 >
-                  <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div>
-                      <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                        <program.icon className="w-7 h-7 text-primary-foreground" />
+                  <div className="rounded-t-2xl overflow-hidden">
+                    <img
+                      src={programImages[index]}
+                      alt={programImageAlts[index]}
+                      className="w-full h-56 md:h-72 object-cover"
+                      loading="lazy"
+                      width={1280}
+                      height={864}
+                    />
+                  </div>
+                  <div className="p-8 md:p-10">
+                    <div className="grid lg:grid-cols-2 gap-8 items-start">
+                      <div>
+                        <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
+                          <program.icon className="w-7 h-7 text-primary-foreground" />
+                        </div>
+                        <h3 className="font-heading text-2xl text-foreground mb-4">
+                          {program.title}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {program.description}
+                        </p>
                       </div>
-                      <h3 className="font-heading text-2xl text-foreground mb-4">
-                        {program.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {program.description}
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-4">
-                        Key Activities
-                      </h4>
-                      <ul className="space-y-3">
-                        {program.activities.map((activity, actIndex) => (
-                          <li
-                            key={actIndex}
-                            className="flex items-start gap-3 text-muted-foreground"
-                          >
-                            <span className="w-1.5 h-1.5 bg-gold-soft rounded-full mt-2 flex-shrink-0" />
-                            <span className="leading-relaxed">{activity}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-4">
+                          Key Activities
+                        </h4>
+                        <ul className="space-y-3">
+                          {program.activities.map((activity, actIndex) => (
+                            <li
+                              key={actIndex}
+                              className="flex items-start gap-3 text-muted-foreground"
+                            >
+                              <span className="w-1.5 h-1.5 bg-gold-soft rounded-full mt-2 flex-shrink-0" />
+                              <span className="leading-relaxed">{activity}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>

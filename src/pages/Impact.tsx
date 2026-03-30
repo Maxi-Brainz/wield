@@ -156,11 +156,21 @@ const Impact = () => {
                   Specific partner names will be listed once formal approvals or MOUs are confirmed.
                 </p>
               </div>
-              <div className="bg-background rounded-2xl p-10 border border-border">
-                <p className="font-heading text-2xl text-foreground leading-relaxed">
-                  "Our partnerships are built on mutual respect, shared values, and a 
-                  collective commitment to advancing women's leadership across Nigeria."
-                </p>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={impactPartnershipsImg}
+                  alt="Partnership handshake between women stakeholders"
+                  className="w-full h-64 md:h-80 object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={864}
+                />
+                <div className="bg-background p-8 border border-border border-t-0">
+                  <p className="font-heading text-xl text-foreground leading-relaxed italic">
+                    "Our partnerships are built on mutual respect, shared values, and a 
+                    collective commitment to advancing women's leadership across Nigeria."
+                  </p>
+                </div>
               </div>
             </div>
           </div>
