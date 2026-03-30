@@ -50,8 +50,8 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <PageSEO
-        title="About WIELD-I | Women-Led NGO for Gender Equality in Nigeria"
-        description="WIELD-I is a women-led organization advancing gender equality, governance reform, and women's leadership development across Nigeria."
+        title="About WIELD-I | Women-Led NGO for Inclusion & Empowerment in Nigeria"
+        description="WIELD-I is a women-led organization advancing inclusivity, empowerment, and women's leadership development across Nigeria."
         path="/about"
       />
       <Header />
