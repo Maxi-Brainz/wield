@@ -32,7 +32,7 @@ const values = [
   {
     icon: Target,
     title: "Our Mission",
-    description: "To advance gender equality and women's empowerment through evidence-informed advocacy, capacity building, and strategic partnerships that create lasting systemic change across Nigeria.",
+    description: "To advance women's inclusion and empowerment through evidence-informed advocacy, capacity building, and strategic partnerships that create lasting systemic change across Nigeria.",
   },
   {
     icon: Eye,
