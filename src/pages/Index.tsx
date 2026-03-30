@@ -24,7 +24,7 @@ const Index = () => {
           id="about"
           label="Who We Are"
           title="A Trusted Voice for Women's Rights and Leadership in Nigeria"
-          description="WIELD-I is a women-led, non-profit organization dedicated to advancing gender equality, women's political participation, and economic empowerment across Nigeria."
+          description="WIELD-I is a women-led, non-profit organization dedicated to advancing inclusivity, empowerment, orientation, and leadership development across Nigeria."
           ctaText="Learn About Us"
           ctaLink="/about"
           variant="light"

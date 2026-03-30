@@ -67,8 +67,8 @@ const About = () => {
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               The Women's Inclusion, Empowerment & Leadership Development Initiative is a 
-              women-led, non-profit, and non-political organization dedicated to advancing 
-              gender equality across Nigeria.
+              women-led, non-profit organization dedicated to advancing inclusivity, 
+              empowerment, orientation, and leadership development across Nigeria.
             </p>
           </div>
         </section>

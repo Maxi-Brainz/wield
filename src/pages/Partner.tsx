@@ -65,7 +65,7 @@ const partnershipTypes = [
   {
     icon: Handshake,
     title: "Civil Society Organizations",
-    description: "Join our network of organizations working toward gender equality and women's empowerment across Nigeria.",
+    description: "Join our network of organizations working toward women's inclusion and empowerment across Nigeria.",
     examples: ["Coalition building", "Joint advocacy campaigns", "Knowledge sharing"],
   },
 ];
