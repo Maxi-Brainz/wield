@@ -78,32 +78,44 @@ const About = () => {
         {/* Our Story */}
         <section className="section-padding bg-background">
           <div className="container-narrow mx-auto">
-            <div className="max-w-3xl mx-auto">
-              <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
-                Our Story
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-8 leading-tight">
-                Founded on Principles of Inclusion and Equity
-              </h2>
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  WIELD-I was established to address the persistent barriers that limit women's 
-                  full participation in Nigeria's social, economic, and political spheres. We 
-                  recognized that meaningful change requires a comprehensive approach—one that 
-                  combines grassroots mobilization with policy advocacy and institutional engagement.
-                </p>
-                <p>
-                  Our work is grounded in evidence and informed by the lived experiences of women 
-                  across Nigeria. We partner with communities, civil society organizations, government 
-                  agencies, and international development partners to create sustainable pathways 
-                  for women's advancement.
-                </p>
-                <p>
-                  Today, WIELD-I operates across multiple states in Nigeria, working with women 
-                  aspirants, community leaders, policymakers, and development stakeholders to build 
-                  a more equitable society where every woman can lead, thrive, and contribute to 
-                  national development.
-                </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
+                  Our Story
+                </span>
+                <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-8 leading-tight">
+                  Founded on Principles of Inclusion and Equity
+                </h2>
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p>
+                    WIELD-I was established to address the persistent barriers that limit women's 
+                    full participation in Nigeria's social, economic, and political spheres. We 
+                    recognized that meaningful change requires a comprehensive approach—one that 
+                    combines grassroots mobilization with policy advocacy and institutional engagement.
+                  </p>
+                  <p>
+                    Our work is grounded in evidence and informed by the lived experiences of women 
+                    across Nigeria. We partner with communities, civil society organizations, government 
+                    agencies, and international development partners to create sustainable pathways 
+                    for women's advancement.
+                  </p>
+                  <p>
+                    Today, WIELD-I operates across multiple states in Nigeria, working with women 
+                    aspirants, community leaders, policymakers, and development stakeholders to build 
+                    a more equitable society where every woman can lead, thrive, and contribute to 
+                    national development.
+                  </p>
+                </div>
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={aboutStoryImg}
+                  alt="WIELD-I community leaders at an outdoor event in Nigeria"
+                  className="w-full h-72 md:h-96 object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={864}
+                />
               </div>
             </div>
           </div>
