@@ -24,7 +24,7 @@ const whyPartnerReasons = [
   {
     icon: Target,
     title: "Strategic Focus",
-    description: "Our work is evidence-informed and aligned with national and international frameworks on gender equality and women's empowerment.",
+    description: "Our work is evidence-informed and aligned with national and international frameworks on women's inclusion and empowerment.",
   },
   {
     icon: Shield,
