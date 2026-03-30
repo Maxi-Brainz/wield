@@ -53,7 +53,7 @@ const crossCuttingPrograms = [
   {
     icon: GraduationCap,
     title: "Capacity Building",
-    description: "Strengthening the skills and knowledge of women, organizations, and institutions to effectively advance gender equality objectives.",
+    description: "Strengthening the skills and knowledge of women, organizations, and institutions to effectively advance women's inclusion and empowerment objectives.",
   },
   {
     icon: Network,

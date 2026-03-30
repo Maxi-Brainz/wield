@@ -24,7 +24,7 @@ const whyPartnerReasons = [
   {
     icon: Target,
     title: "Strategic Focus",
-    description: "Our work is evidence-informed and aligned with national and international frameworks on gender equality and women's empowerment.",
+    description: "Our work is evidence-informed and aligned with national and international frameworks on women's inclusion and empowerment.",
   },
   {
     icon: Shield,
@@ -65,7 +65,7 @@ const partnershipTypes = [
   {
     icon: Handshake,
     title: "Civil Society Organizations",
-    description: "Join our network of organizations working toward gender equality and women's empowerment across Nigeria.",
+    description: "Join our network of organizations working toward women's inclusion and empowerment across Nigeria.",
     examples: ["Coalition building", "Joint advocacy campaigns", "Knowledge sharing"],
   },
 ];

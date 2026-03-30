@@ -39,9 +39,9 @@ const AboutSection = () => {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 The Women's Inclusion, Empowerment & Leadership Development Initiative 
-                (WIELD-I) is a women-led, non-profit, and non-political organization 
-                dedicated to advancing gender equality, women's political participation, 
-                and economic empowerment across Nigeria.
+                (WIELD-I) is a women-led, non-profit organization dedicated to advancing 
+                inclusivity, empowerment, orientation, and leadership development across 
+                Nigeria.
               </p>
               <p>
                 Founded on the principles of inclusion and equity, we work at the 

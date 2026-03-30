@@ -125,7 +125,7 @@ const Impact = () => {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   WIELD-I's impact is amplified through meaningful collaborations with 
-                  organizations that share our commitment to gender equality and women's 
+                  organizations that share our commitment to women's inclusion and 
                   empowerment in Nigeria.
                 </p>
                 <p className="text-foreground font-medium mb-6">

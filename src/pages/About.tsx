@@ -32,7 +32,7 @@ const values = [
   {
     icon: Target,
     title: "Our Mission",
-    description: "To advance gender equality and women's empowerment through evidence-informed advocacy, capacity building, and strategic partnerships that create lasting systemic change across Nigeria.",
+    description: "To advance women's inclusion and empowerment through evidence-informed advocacy, capacity building, and strategic partnerships that create lasting systemic change across Nigeria.",
   },
   {
     icon: Eye,
@@ -50,8 +50,8 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <PageSEO
-        title="About WIELD-I | Women-Led NGO for Gender Equality in Nigeria"
-        description="WIELD-I is a women-led organization advancing gender equality, governance reform, and women's leadership development across Nigeria."
+        title="About WIELD-I | Women-Led NGO for Inclusion & Empowerment in Nigeria"
+        description="WIELD-I is a women-led organization advancing inclusivity, empowerment, and women's leadership development across Nigeria."
         path="/about"
       />
       <Header />
@@ -67,8 +67,8 @@ const About = () => {
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               The Women's Inclusion, Empowerment & Leadership Development Initiative is a 
-              women-led, non-profit, and non-political organization dedicated to advancing 
-              gender equality across Nigeria.
+              women-led, non-profit organization dedicated to advancing inclusivity, 
+              empowerment, orientation, and leadership development across Nigeria.
             </p>
           </div>
         </section>
