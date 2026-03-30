@@ -57,12 +57,20 @@ const Impact = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="section-padding bg-primary text-primary-foreground">
-          <div className="container-narrow mx-auto text-center">
+        <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+          <img
+            src={impactHeroImg}
+            alt="Women celebrating at a graduation ceremony in Nigeria"
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={864}
+          />
+          <div className="absolute inset-0 bg-primary/80" />
+          <div className="relative z-10 container-narrow mx-auto text-center py-20 px-6">
             <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
               Our Impact
             </span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight text-primary-foreground">
               Driving Systemic Change Through Advocacy & Action
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
