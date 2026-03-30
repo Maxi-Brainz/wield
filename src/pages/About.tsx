@@ -4,6 +4,8 @@ import PageSEO from "@/components/PageSEO";
 import { Users, Scale, Handshake, HeartHandshake, Target, Eye, Heart } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import founderImage from "@/assets/founder-amarachi.jpg";
+import aboutStoryImg from "@/assets/about-story.jpg";
+import aboutApproachImg from "@/assets/about-approach.jpg";
 
 const pillars = [
   {
