@@ -59,11 +59,6 @@ const Team = () => {
             <div className="max-w-3xl mx-auto mb-16">
               <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <Avatar className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 hover:scale-105">
-                  <AvatarImage 
-                    src={founderImage} 
-                    alt="Okeke Amarachi Evangel - Founder and Executive Director of WIELD-I Nigeria" 
-                    className="object-cover" 
-                  />
                   <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl sm:text-5xl md:text-6xl font-semibold">O</AvatarFallback>
                 </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
