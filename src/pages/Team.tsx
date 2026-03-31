@@ -9,21 +9,18 @@ const teamMembers = [
     name: "Franca Mmesoma",
     role: "Secretary & Research Lead",
     initial: "F",
-    image: francaImage,
     bio: "Supports WIELD-I's organizational coordination and leads research initiatives that inform evidence-based programming, policy briefs, and advocacy strategies across the organization.",
   },
   {
     name: "Kemi Sandra Ogunleye",
     role: "Programs & Strategy Lead",
     initial: "K",
-    image: kemiImage,
     bio: "Oversees the design and implementation of WIELD-I's core programs across political participation, economic empowerment, and leadership development.",
   },
   {
     name: "Joseph Ogakwu",
     role: "Digital & Technology Lead",
     initial: "J",
-    image: josephImage,
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
 ];
