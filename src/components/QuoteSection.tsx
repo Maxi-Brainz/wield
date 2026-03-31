@@ -1,7 +1,6 @@
 import { Quote } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ScrollReveal, TextReveal, ScaleReveal } from "@/components/ScrollAnimations";
-import founderImage from "@/assets/founder-amarachi.jpg";
 
 const QuoteSection = () => {
   return (
