@@ -83,24 +83,11 @@ const Team = () => {
                   key={index}
                   className="bg-background rounded-xl p-6 md:p-8 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-gold-soft/50 group"
                 >
-                  {member.image ? (
-                    <Avatar className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 group-hover:scale-105">
-                      <AvatarImage 
-                        src={member.image} 
-                        alt={`${member.name} - ${member.role} at WIELD-I Nigeria`} 
-                        className="object-cover" 
-                      />
-                      <AvatarFallback className="bg-primary text-primary-foreground font-heading text-3xl sm:text-4xl md:text-5xl font-semibold">
-                        {member.initial}
-                      </AvatarFallback>
-                    </Avatar>
-                  ) : (
-                    <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-105">
-                      <span className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary-foreground font-semibold">
-                        {member.initial}
-                      </span>
-                    </div>
-                  )}
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-105">
+                    <span className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary-foreground font-semibold">
+                      {member.initial}
+                    </span>
+                  </div>
                   <h3 className="font-heading text-lg md:text-xl text-foreground mb-2">
                     {member.name}
                   </h3>
