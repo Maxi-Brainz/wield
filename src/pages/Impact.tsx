@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Scale, Users, Megaphone, BookOpen, Handshake, BarChart3 } from "lucide-react";
-import impactHeroImg from "@/assets/impact-hero.jpg";
-import impactPartnershipsImg from "@/assets/impact-partnerships.jpg";
 
 const impactAreas = [
   {
@@ -57,20 +55,12 @@ const Impact = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
-          <img
-            src={impactHeroImg}
-            alt="Women celebrating at a graduation ceremony in Nigeria"
-            className="absolute inset-0 w-full h-full object-cover"
-            width={1920}
-            height={864}
-          />
-          <div className="absolute inset-0 bg-primary/80" />
-          <div className="relative z-10 container-narrow mx-auto text-center py-20 px-6">
+        <section className="section-padding bg-primary text-primary-foreground">
+          <div className="container-narrow mx-auto text-center">
             <span className="text-gold-soft font-semibold text-sm uppercase tracking-wider mb-4 block">
               Our Impact
             </span>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight text-primary-foreground">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
               Driving Systemic Change Through Advocacy & Action
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
@@ -156,21 +146,11 @@ const Impact = () => {
                   Specific partner names will be listed once formal approvals or MOUs are confirmed.
                 </p>
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src={impactPartnershipsImg}
-                  alt="Partnership handshake between women stakeholders"
-                  className="w-full h-64 md:h-80 object-cover"
-                  loading="lazy"
-                  width={1280}
-                  height={864}
-                />
-                <div className="bg-background p-8 border border-border border-t-0">
-                  <p className="font-heading text-xl text-foreground leading-relaxed italic">
-                    "Our partnerships are built on mutual respect, shared values, and a 
-                    collective commitment to advancing women's leadership across Nigeria."
-                  </p>
-                </div>
+              <div className="bg-background rounded-2xl p-10 border border-border">
+                <p className="font-heading text-2xl text-foreground leading-relaxed">
+                  "Our partnerships are built on mutual respect, shared values, and a 
+                  collective commitment to advancing women's leadership across Nigeria."
+                </p>
               </div>
             </div>
           </div>

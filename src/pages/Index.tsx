@@ -5,9 +5,6 @@ import QuoteSection from "@/components/QuoteSection";
 import PartnerSection from "@/components/PartnerSection";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
-import homeAboutImg from "@/assets/home-about.jpg";
-import homeProgramsImg from "@/assets/home-programs.jpg";
-import homeImpactImg from "@/assets/home-impact.jpg";
 
 const Index = () => {
   return (
@@ -31,9 +28,6 @@ const Index = () => {
           ctaText="Learn About Us"
           ctaLink="/about"
           variant="light"
-          image={homeAboutImg}
-          imageAlt="African women leaders in a professional strategy meeting"
-          imagePosition="right"
         />
 
         {/* Programs Summary */}
@@ -45,9 +39,6 @@ const Index = () => {
           ctaText="View Our Programs"
           ctaLink="/programs"
           variant="cream"
-          image={homeProgramsImg}
-          imageAlt="Women participating in a capacity building workshop in Nigeria"
-          imagePosition="left"
         />
 
         {/* Impact Summary */}
@@ -59,9 +50,6 @@ const Index = () => {
           ctaText="See Our Impact"
           ctaLink="/impact"
           variant="light"
-          image={homeImpactImg}
-          imageAlt="Women at a community gathering for civic engagement in Nigeria"
-          imagePosition="right"
         />
 
         <QuoteSection />
