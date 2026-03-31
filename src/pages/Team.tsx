@@ -2,11 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Users } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import founderImage from "@/assets/founder-amarachi.jpg";
-import josephImage from "@/assets/joseph-ogakwu.jpeg";
-import kemiImage from "@/assets/kemi-ogunleye.jpeg";
-import francaImage from "@/assets/franca-mmesoma.jpeg";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const teamMembers = [
   {

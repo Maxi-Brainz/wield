@@ -25,7 +25,6 @@ const QuoteSection = () => {
           <ScrollReveal direction="up" delay={0.3}>
             <div className="flex flex-col items-center">
               <Avatar className="w-16 h-16 border-2 border-gold-soft mb-4">
-                <AvatarImage src={founderImage} alt="Okeke Amarachi Evangel - Founder of WIELD-I" className="object-cover" />
                 <AvatarFallback className="bg-gold-soft/20 font-heading text-2xl text-gold-soft font-semibold">O</AvatarFallback>
               </Avatar>
               <span className="text-primary-foreground font-semibold text-lg">
