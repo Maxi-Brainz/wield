@@ -2,32 +2,25 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Users } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import founderImage from "@/assets/founder-amarachi.jpg";
-import josephImage from "@/assets/joseph-ogakwu.jpeg";
-import kemiImage from "@/assets/kemi-ogunleye.jpeg";
-import francaImage from "@/assets/franca-mmesoma.jpeg";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const teamMembers = [
   {
     name: "Franca Mmesoma",
     role: "Secretary & Research Lead",
     initial: "F",
-    image: francaImage,
     bio: "Supports WIELD-I's organizational coordination and leads research initiatives that inform evidence-based programming, policy briefs, and advocacy strategies across the organization.",
   },
   {
     name: "Kemi Sandra Ogunleye",
     role: "Programs & Strategy Lead",
     initial: "K",
-    image: kemiImage,
     bio: "Oversees the design and implementation of WIELD-I's core programs across political participation, economic empowerment, and leadership development.",
   },
   {
     name: "Joseph Ogakwu",
     role: "Digital & Technology Lead",
     initial: "J",
-    image: josephImage,
     bio: "Oversees WIELD-I's digital presence and communications strategy, supporting donor-facing materials and advising on digital tools to position the organization as credible and donor-ready.",
   },
 ];
@@ -66,11 +59,6 @@ const Team = () => {
             <div className="max-w-3xl mx-auto mb-16">
               <div className="bg-cream rounded-xl p-8 md:p-12 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <Avatar className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 hover:scale-105">
-                  <AvatarImage 
-                    src={founderImage} 
-                    alt="Okeke Amarachi Evangel - Founder and Executive Director of WIELD-I Nigeria" 
-                    className="object-cover" 
-                  />
                   <AvatarFallback className="bg-primary text-primary-foreground font-heading text-4xl sm:text-5xl md:text-6xl font-semibold">O</AvatarFallback>
                 </Avatar>
                 <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-2">
@@ -95,24 +83,11 @@ const Team = () => {
                   key={index}
                   className="bg-background rounded-xl p-6 md:p-8 border border-border text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-gold-soft/50 group"
                 >
-                  {member.image ? (
-                    <Avatar className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 border-4 border-gold-soft transition-transform duration-300 group-hover:scale-105">
-                      <AvatarImage 
-                        src={member.image} 
-                        alt={`${member.name} - ${member.role} at WIELD-I Nigeria`} 
-                        className="object-cover" 
-                      />
-                      <AvatarFallback className="bg-primary text-primary-foreground font-heading text-3xl sm:text-4xl md:text-5xl font-semibold">
-                        {member.initial}
-                      </AvatarFallback>
-                    </Avatar>
-                  ) : (
-                    <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-105">
-                      <span className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary-foreground font-semibold">
-                        {member.initial}
-                      </span>
-                    </div>
-                  )}
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full bg-primary flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-105">
+                    <span className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary-foreground font-semibold">
+                      {member.initial}
+                    </span>
+                  </div>
                   <h3 className="font-heading text-lg md:text-xl text-foreground mb-2">
                     {member.name}
                   </h3>
