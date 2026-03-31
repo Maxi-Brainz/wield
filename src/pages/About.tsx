@@ -2,8 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageSEO from "@/components/PageSEO";
 import { Users, Scale, Handshake, HeartHandshake, Target, Eye, Heart } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import founderImage from "@/assets/founder-amarachi.jpg";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const pillars = [
   {
